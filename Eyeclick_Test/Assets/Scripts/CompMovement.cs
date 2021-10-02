@@ -5,7 +5,7 @@ using UnityEngine;
 public class CompMovement : MonoBehaviour
 {
     Rigidbody rb;
-    private float seekSpeed =1f;
+    private float seekSpeed =0.5f;
     public GameObject target;
     private int range=50;
     private bool isDetected=false;
@@ -41,8 +41,12 @@ public class CompMovement : MonoBehaviour
     }
   }
     }
-    
+    Debug.DrawRay(transform.position + (transform.right * 7), transform.forward * 20, Color.red);
+  Debug.DrawRay(transform.position - (transform.right * 7), transform.forward * 20, Color.red);
+  Debug.DrawRay(transform.position - (transform.forward * 4), -transform.right * 20, Color.yellow);
+  Debug.DrawRay(transform.position - (transform.forward * 4), transform.right * 20, Color.yellow);
 }
+
 }
 /// <summary>
 /// AI try to avoid wall.

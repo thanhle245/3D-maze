@@ -45,6 +45,7 @@
      <Compile Include="Assets\Scripts\Loading.cs" />
      <Compile Include="Assets\Scripts\MazeRenderer.cs" />
      <Compile Include="Assets\Scripts\PlayerMovement.cs" />
+     <Compile Include="Assets\Scripts\WallFollowing.cs" />
     <Reference Include="UnityEngine">
         <HintPath>D:/unity/2019.4.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
